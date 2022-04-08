@@ -1,0 +1,186 @@
+/* &display=swap */
+@import "null.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+}
+
+/* --------отцентровка----------------------------------- */
+	[class*="__container"] {
+		max-width: 1020px;
+		margin: 0 auto;
+	}
+
+body {
+font-family: "Roboto", serif;
+font-weight: 400;
+font-size: 16px;
+}
+/* ================================================================ */
+
+/* ---------------прибиваю меню к верху с position: fixed; ------------------------------------------------------------ */
+.header__menu {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(255, 255, 255);
+	padding: 20px 0;
+	text-align: center;
+	}
+
+	/* --------меню в строку----------------------------------------------- */
+.menu__item{
+		display:inline-block;
+	}
+
+	/* --------между пунктами в меню--------------------------------------------------------------- */
+.menu__items li:not(:last-child){
+	margin-right: 54px;
+} 
+
+/* ----------свойства текста меню-------------------------------------------------------------------------------------- */
+.menu__link{
+	display: inline-block;
+	padding: 10px 0;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 157%;
+	letter-spacing: 0.15px; 
+}   
+
+
+.menu__link_arrow {
+	padding-right: 13px;
+	position: relative;
+} 
+
+/* ---------с помощью псевдокласса ставлю галочку-------------------------------------------- */
+.menu__link_arrow::after{
+	content: "";
+   position: absolute; 
+	width: 16px; 
+	height: 16px; 
+	top: 14px;
+	right: -5px;
+	background: url('../img/expand_more.svg') 0 0 no-repeat;
+} 
+/* -------------------------- */
+
+
+ /*------растягиваем картинку по ширине----------------------------------------------------------  */
+.who-we-are__img{
+	width: 100%;
+} 
+
+ .who-we-are__container {
+	min-height: 700px;
+	padding: 0 10px;
+}  
+
+/* -------блок фон, остается статичным------------------- */
+ .who-we-are__content {
+  position: relative;
+	background-color: #5D62B5;
+	border-radius: 40px;
+	color: #f5f5f5;
+   top: -80px; 
+} 
+
+/* ---------с помощью псевдокласса ставлю элемент кружочки-------------------------------------------- */
+.who-we-are__content::before{
+	content: '';
+	background: url('../img/stylize-circles.png') 0 0 no-repeat;
+	position: absolute;
+	width: 201px;
+	height: 317px;
+	top: -109px;
+	right: -76px; 
+}
+
+
+/* ------------задаю параметры блока с фиолю фоном------------------------------------------------- */
+.content-who-we-are__box{
+	max-width: 846px;
+	padding: 100px 80px 354px 87px;
+
+}
+
+
+/* ----------------с помощью псевдокласса ставлю тень за картинкой------------------------------ */
+.content-who-we-are__box::after{
+	content: "";
+	position: absolute;
+	background:url('../img/blog-2.png') 0 0 no-repeat;
+	width: 553px;
+	min-height:480px;
+	top: 330px;
+	left:-20px;
+}
+
+/* ---------------подзаголовок------------------------------- */
+.content-who-we-are__subtitle {
+	padding-left: 40px;
+	margin: 0px 0px 33px 0px; 
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	color: #f5f5f5;
+}
+
+
+/* ----------------с помощью псевдокласса ставлю элемент возле подзаголовка--------------- */
+.content-who-we-are__subtitle::before{
+	content:"";
+	position: absolute;
+	top: 96px;
+	left: 87px;
+	width: 17px;
+	height: 19px;
+	background: url('../img/overline-mark.png') 0 0 no-repeat;
+}
+
+.content-who-we-are__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 116%;
+	max-width: 583px;
+	color: #fff;
+	margin-bottom: 36px;
+}
+
+.content-who-we-are__text {
+	letter-spacing: 0.15px;
+	line-height: 1.5;
+	margin-bottom: 33px;
+}
+
+/* ------------фото картинка--------------------------------------------- */
+.who-we-are__page {
+	position: absolute;
+	z-index: 5;
+	max-width: 846px;
+	min-height: 420px;
+	border-radius: 40px;
+	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+	bottom: -120px;
+}
+
+
+/* ---------------------назад в песочницу---------------------------------- */
+.footer__content{
+	background-color: rgb(63, 109, 103);
+	max-width:250px;
+	color: rgb(255, 255, 255);
+   border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	padding: 30px;
+	position: relative;
+	top: 150px;
+	left: 100px;
+}

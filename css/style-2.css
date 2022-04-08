@@ -1,0 +1,159 @@
+/* &display=swap */
+@import "null.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+}
+/* ---отцентровка--- */
+	 [class*="__container"] {
+		max-width: 1020px;
+		margin: 0 auto;
+	} 
+
+body {
+   font-family: "Roboto", serif;
+   font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+/* ================================================================ */
+
+.header__container{
+ 
+	/* -------------експериментую з position: fixed---------------- */
+	position: fixed;
+   z-index: 2;  
+	background: rgb(238, 203, 255);
+	min-width: 500px;
+	top: 50px;
+	left: 50px; 
+	border-radius: 12px;
+	border: 3px solid rgb(210, 106, 216);
+	padding: 5px;
+	text-align: center;
+}
+
+.header__content{
+	font-size: 15px;
+	color: rgb(80, 77, 146);
+letter-spacing: 1.5px;
+}
+
+
+.main__container{
+	min-height: 800px;
+	/* min-width: 100%; */
+}
+
+.container__block-play {
+	background-color: rgb(247, 215, 183);
+	min-height:100px;
+	max-width:250px;
+	font-size: 35px;
+	color: rgb(86, 15, 93);
+	font-weight: 700;
+	margin:150px 0px 0px 50px;
+	text-align: center;
+	padding: 40px;
+} 
+
+.container__block-1 {
+	position: relative;
+	background: #b8c26e;
+	top:50px;
+   right:20px;
+	padding: 20px;
+	z-index: 5;
+	border: 3px solid rgb(247, 71, 185);
+}
+
+
+.container__block-2 {
+	position: absolute;
+	background: #a7e3eb;
+	top: 10px;
+   left: 40px;
+	padding: 20px;
+	z-index: 4;
+	border: 3px solid rgb(247, 71, 185);
+}
+
+
+.container__block-3 {
+	position: sticky;
+	background: #2f575d;
+	top: 10px;
+   left: 80px;
+	padding: 20px;
+	z-index: 3;
+	border: 3px solid rgb(247, 71, 185);
+}
+
+
+.container__block-4 {
+	position: absolute;
+	background: #f1ba23;
+	top: 10px;
+   left: 160px;
+	padding: 20px;
+	z-index: 2;
+	border: 3px solid rgb(247, 71, 185);
+}
+
+
+.container__block-5 {
+	position: relative;
+	background: #fffdc1;
+	top: 10px;
+   left: 320px;
+	padding: 20px;
+	z-index: 1;
+	border: 3px solid rgb(247, 71, 185);
+}
+
+
+.footer__container{
+	position: relative;
+}
+
+.footer__block1{
+	position:relative;
+	display: inline-block;
+	padding-left: 70px;  
+	margin: 25px;
+	width: 330px;
+	height: 330px;
+	background: #dfbea7 url('../img/images3.jfif') 0 0 / cover no-repeat;
+   /* overflow: hidden;   */
+}
+
+.footer__block1::before{
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 80px; 
+   background: url('../img/Download.png') 0 0 no-repeat; 
+	top: 50%;
+	left:-60px; 
+}
+
+.footer__block1_moved {
+   top: 230px;
+	left: 110px;
+	z-index: 6;  
+}
+
+
+.footer__text {
+	position: absolute;
+	z-index: 20; 
+   bottom: -50px;
+	right: 80px;
+	background: #d47ca8;
+	text-transform: uppercase;
+	border-radius: 24px;
+	font-size: 18px;
+	padding: 20px;
+}
+
