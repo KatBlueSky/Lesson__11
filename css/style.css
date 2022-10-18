@@ -1,0 +1,222 @@
+/* &display=swap */
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* ================================================================ */
+.wrapper {
+	position: relative;
+	 overflow: hidden;  
+	min-height: 100%;
+	
+}
+/* ---отцентровка--- */
+	 [class*="__container"] {
+		max-width: 1020px;
+		margin: 0 auto;
+	} 
+
+body {
+   font-family: "Roboto", serif;
+   font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+/* ================================================================ */
+.content{
+	background-color: rgb(247, 245, 245);
+	box-shadow:2px 2px 15px #a0a0a0;
+}
+
+.header{
+	/* -------------position: fixed---------------- */
+	position: fixed;
+	top: 10px;
+   left: 0;
+	width: 100%;
+	border-radius: 12px;
+	background: rgb(231, 211, 241);
+	border: 3px solid rgb(210, 106, 216);
+	padding: 5px;
+	text-align: center;
+	font-weight: 700;
+	/* щоб шапка не накривалась контентом */
+	z-index: 100;
+	margin: 0 auto;
+}
+
+.menu{}
+
+.menu__list {
+	display: inline-block;
+	margin-right: 50px;
+	color: rgb(255, 255, 255);
+	position: relative;
+	padding-left: 25px;
+}
+
+.menu__list:hover{
+	color: blueviolet;
+}
+
+.menu__list::before {
+content: "";
+background: url("../img/star.png") 0 0 / 100% no-repeat;
+width: 16px;
+height: 16px;
+position: absolute;
+top: 3px;
+left: 0;
+}
+
+.menu__list:hover::before {
+color: blueviolet;
+transform: rotate(180deg);
+}
+
+.main{
+	position: relative; 
+	}
+
+.button__btn {
+	   position: absolute;
+		top: 100px;
+		left: 0;
+		background-color: rgb(207, 183, 158);
+		min-width: 250px;
+		color: rgb(86, 15, 93);
+		font-weight: 700;
+		text-align: center;
+		padding: 5px;
+} 
+
+.button__btn::before {
+	content: "";
+	background: url("../img/auto.png") 0 0/100% no-repeat;
+	width: 70px;
+	height: 50px;
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	}
+
+
+.items{
+margin: 0px 10px 50px 10px;
+background-color: rgb(240, 225, 225);
+padding: 10px;
+position: static;
+}
+
+.content__box {
+	margin: 100px 0px 50px 0px;
+	padding: 10px;
+	color: rgb(247, 243, 243);
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.items__item--blue{
+	background-color: rgb(16, 137, 181);
+}
+
+.items__item--red {
+	background-color: rgb(241, 68, 68);
+	position: relative;
+	top: 10px;
+	left: 20px;
+	opacity: 0.8;
+}
+
+.items__item--yellow {
+background-color:rgba(240, 221, 18, 0.879);
+}
+
+.content__relative {
+	margin: 100px 0px 50px 0px;
+	padding: 10px;
+	color: rgb(247, 243, 243);
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+	/* position: relative; */
+}
+
+/* Приклад z-index */
+.items__item--purple {
+	background: rgb(144, 23, 188);
+	z-index: 2;
+}
+
+.items__item--orange {
+background-color: rgb(225, 156, 66);
+position: relative;
+right: 20px;
+bottom: 20px;
+z-index: 1;
+}
+
+.items__item--pink {
+	background-color: rgb(209, 49, 142);
+	bottom: 50px;
+	z-index: 0;
+}
+
+.absolute{
+	position: relative;
+	margin-bottom: 100px;
+}
+
+/*position:absolute */
+.content__absolute {
+	/* для позіціювання блоку .item__item--brown відносно батьківького блоку absolute*/
+	position: relative;
+}
+
+
+.items__item--mint {
+	background: rgb(71, 162, 118);
+}
+
+.items__item--brown {
+	background-color: rgb(117, 78, 22);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 100%;
+	}
+
+.items__item--rose {
+	background-color: rgb(203, 120, 168);
+	
+}
+
+/*position:sticky */
+.content__sticky {
+}
+
+.items__item--crimson{
+	background: rgb(223, 92, 114);
+   position: sticky;	
+	top: 50px;
+	left: 0;
+}
+
+.items__item--aqua {
+	background-color: rgb(147, 243, 241);
+	position: sticky;
+	top: 70px;
+	left: 0;
+	}
+
+.items__item--darkblue {
+	background-color: rgb(56, 40, 159);
+	position: sticky;
+	top: 90px;
+	left: 0;
+}
+
+.items__text{
+	color: rgb(145, 140, 140);
+	padding: 10px 0px 10px 0px;
+}
+

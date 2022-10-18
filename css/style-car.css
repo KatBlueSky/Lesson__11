@@ -1,0 +1,264 @@
+/* &display=swap */
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/* ================================================================ */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* ---відцентровка--- */
+	 [class*="__container"] {
+		max-width: 1240px;
+		margin: 20px  auto;
+	} 
+
+body {
+   font-family: "Roboto", serif;
+   font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.15px;
+}
+/* ================================================================ */
+
+
+.page__image-block{
+	position: relative;
+}
+
+.page__image-block:hover::before {
+content: "";
+background: url("../img/montain.png") 0 0 / 100% no-repeat;
+width: 1200px;
+height: 900px;
+position: absolute;
+top: 140px;
+left: -470px;
+z-index: 1;}
+
+.page__image-block:hover::after {
+	content: "";
+	background: url("../img/montain.png") 0 0 / 100% no-repeat;
+	width: 900px;
+	height: 1200px;
+	transform: skewX(3deg);
+	position: absolute;
+	top: 400px;
+	left: 1200px;
+	z-index: 1;
+}
+
+/* !!!!хочу поставити гори при hover у пустинізнайти у відео */
+
+	.desert{
+	/* ставлю картинку по всій ширині container */
+	min-width: 100%;
+	position: relative;
+}
+
+
+.moon img {
+	max-width: 480px;
+	position: fixed;
+	top: 80px;
+	left: 80px;
+}
+
+/* При наведенны мысяць шевелиться */
+.moon img:hover {
+	transform: rotate(20deg);
+}
+
+
+.car {
+	position: absolute;
+	top: 750px;
+	left: 580px;
+}
+
+.car__content {}
+
+.car__bumper {
+	position: absolute;
+	top: 225px;
+	left:118px;
+}
+
+.car__bonnet {
+	position: absolute;
+	top: -15px;
+	left: 120px;
+}
+
+.car__headlight{
+position: absolute;
+	top: 110px;
+	left: 145px;
+}
+
+.car__body{
+	background-color: rgb(58, 58, 58); 
+	border-radius:51% 49% 100% 0% / 100% 100% 0% 0%;
+	width: 470px;
+	height: 120px;
+	position: absolute;
+	top: 18px;
+	left: 33px;
+	z-index: 1;
+}
+
+.roof__inset {
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	z-index: 1;
+}
+
+/* батьківський елемент */
+.roof__inset>img {
+	position: relative;
+	z-index: 1;
+}
+
+.roof {
+	position: absolute;
+	width: 515px;
+	height: 223px;
+	left: 175px;
+	top: 0;
+}
+
+.roof__inset:hover>img {
+	position: absolute;
+	top: 200px;
+	visibility: hidden;
+	z-index: -1;
+}
+
+
+.image-people{
+	display: inline-block;
+	position: relative;
+}
+
+.image-one,
+.image-two,
+.image-three,
+.image-for,
+.image-fife,
+.image-fife,
+.image-six,
+.image-eight,
+.image-nine,
+.image-ten,
+.image-eleven{
+	width: 50px;
+	height: 50px;
+}
+
+.image-one {
+	position: absolute;
+	top: 50px;
+	left: 40px;
+}
+.image-two {
+	position: absolute;
+	top: 70px;
+	left: 90px;
+}
+.image-three {
+	position: absolute;
+	top: 20px;
+	left: 100px;
+}
+
+.image-for {
+	position: absolute;
+	top: 40px;
+	left: 130px;
+}
+.image-fife {
+	position: absolute;
+	top: 30px;
+	left: 300px;
+}
+.image-six{
+	position: absolute;
+	top: 50px;
+	left: 350px;
+}
+
+.image-eight {
+	position: absolute;
+	top: 70px;
+	left: 320px;
+}
+
+.image-nine{
+	position: absolute;
+	top: 70px;
+	left: 400px;
+}
+
+.image-ten{
+	position: absolute;
+	top: 40px;
+	left: 285px;
+}
+
+.boss{
+   position: relative;
+	top: 10px;
+	left: 200px;
+	z-index: 1;
+	overflow: hidden; 
+}
+
+.boss:hover {
+	overflow: visible;
+}
+
+.boss::before {
+	content: "";
+	background: url("../img/idea.png") 0 0 / 100% no-repeat;
+	width: 180px;
+	height: 150px;
+	position: absolute;
+	top: -110px;
+	left: 70px;
+}       
+
+
+.boss__text {
+	font-size: 16px;
+	font-weight: 700;
+	color: rgb(113, 112, 111);
+	position: absolute;
+	top: -95px;
+	left: 120px;
+}
+
+.image-boss {
+	width: 80px;
+	height: 100px;
+}
+
+
+.car__radiator {
+	position: absolute;
+	top: 150px;
+	left: 310px;
+}
+
+.car__car--number {
+	position: absolute;
+	top: 313px;
+	left: 340px;
+}
+
+.car__tires {
+	position: absolute;
+		top: 305px;
+		left: 50px;
+		filter: drop-shadow(0px 18px 7px black) drop-shadow(0px 29px 20px black);;
+}
